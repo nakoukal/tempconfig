@@ -35,14 +35,14 @@ class TimetempRepository extends Repository{
 	public function IncreaseTemp(array $values)
 	{
 		foreach ($values as $value) {			
-			$this->db->table('time_temp')->where(array('TimetempID'=>$value))->update(['Temp+=' => 1]);
+			$this->db->table('time_temp')->where(array('TimetempID'=>$value))->update(['Temp+=' => 0.5]);
 		}		
 	}
 	
 	public function DegreaseTemp(array $values)
 	{
 		foreach ($values as $value) {			
-			$this->db->table('time_temp')->where(array('TimetempID'=>$value))->update(['Temp-=' => 1]);
+			$this->db->table('time_temp')->where(array('TimetempID'=>$value))->update(['Temp-=' => 0.5]);
 		}		
 	}
 }
