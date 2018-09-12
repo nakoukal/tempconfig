@@ -1,0 +1,24 @@
+{block content}
+{foreach $sensors as $sensor}    
+{first}
+	<table class='teplota' border="1">
+	<tr>
+		<th>Name</th>		
+		<th>Temp</th>
+		<th>Sheduler</th>
+	</tr>
+{/first}
+    <tr {if $sensor->state_actual} style='background:green;'{/if}>
+		<td>{$sensor->name}</td>		
+		<td>{$sensor->act_temp}</td>
+		<td>
+			<a n:href="Timetemp:hours $sensor->sensorID">
+				<div class='link'>{$sensor->temp_needed}</div>
+			</a>			
+			
+		</td>
+    </tr>    
+{last}</table>{/last}
+{/foreach}
+
+
