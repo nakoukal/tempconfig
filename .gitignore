@@ -1,2 +1,4 @@
 app/config/config.local.neon
 app/config/config.product.neon
+temp/
+log/

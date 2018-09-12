@@ -18,7 +18,7 @@ class RouterFactory
 	{
 		// alternativně zapsáno polem
 		$router = new RouteList();		
-		$router[] = new Route('<presenter>/<action>/[<sensorID>]', 'Homepage:default');		
+		$router[] = new Route('<presenter>/<action>/[<sensorID>]', 'Relremote:default');		
 		return $router;
 	}
 
