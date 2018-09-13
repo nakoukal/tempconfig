@@ -30,6 +30,6 @@ latte:
 services:
 	sensorsRepository: Temp\SensorsRepository
 	timetempRepository: Temp\TimetempRepository
-	relremoteRepository: Temp\RelremoteRepository		
-	router: App\RouterFactory::createRouter
+	relremoteRepository: Temp\RelremoteRepository			
+	router: Nette\Application\Routers\SimpleRouter('Relremote:default')
 
