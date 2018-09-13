@@ -22,6 +22,9 @@ class RelremotePresenter extends BasePresenter
 	
 	public function renderDefault()
 	{					
+		if(!$this->user->isLoggedIn()){				
+			$this->redirect('Sign:in');
+		}
 		$this->template->sensors = $this->RelremoteRepository->GetAllSensors();
 	}
 	
