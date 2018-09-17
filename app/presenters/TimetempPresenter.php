@@ -42,8 +42,8 @@ class TimetempPresenter extends BasePresenter
         $form = new UI\Form;		
         $form->addCheckboxList('toedit');		
         $form->addHidden('sensorID');
-		$form->addSubmit('plus', '+1')->onClick[] = [$this,'processForm1'];
-		$form->addSubmit('minus', '-1')->onClick[] = [$this,'processForm2'];        
+		$form->addSubmit('plus', '+ 0.5')->onClick[] = [$this,'processForm1'];
+		$form->addSubmit('minus', '- 0.5')->onClick[] = [$this,'processForm2'];        
         return $form;
     }
 	

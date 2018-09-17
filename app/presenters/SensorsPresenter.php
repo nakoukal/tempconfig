@@ -9,7 +9,7 @@ use Nette\Application\UI\Presenter;
 use Nette\Utils\Paginator;
 
 
-class HomepagePresenter extends BasePresenter
+class SensorsPresenter extends BasePresenter
 {
 	private $SensorsRepository;
 	
