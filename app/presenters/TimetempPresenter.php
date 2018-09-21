@@ -57,9 +57,7 @@ class TimetempPresenter extends BasePresenter
 	}
 	
 		public function processForm2(\Nette\Forms\Controls\SubmitButton $button)
-	{
-		
-		$form = $button->getForm();
+	{				
         $form = $button->getForm();        
         $values = $form->getHttpData($form::DATA_TEXT, 'sel[]');		
 		$this->TimetempRepository->DegreaseTemp($values);

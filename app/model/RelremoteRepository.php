@@ -18,7 +18,7 @@ class RelremoteRepository extends Repository{
 	
 	public function GetAllSensors()
 	{
-		return $this->db->table('v_rel_sensors')->select('sensorID,state_actual,name,act_temp,temp_needed');
+		return $this->db->table('v_rel_sensors')->select('sensorID,state_actual,name,act_temp,temp_needed,state_extra,state_extra_hour,state_extra_time');
 	}
 	
 }

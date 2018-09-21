@@ -28,6 +28,7 @@ latte:
 		- Nextras\Latte\Macros\RedefineMacro
 
 services:
+	- CategoryForm
 	authenticator: MyAuthenticator	
 	sensorsRepository: Temp\SensorsRepository
 	timetempRepository: Temp\TimetempRepository
